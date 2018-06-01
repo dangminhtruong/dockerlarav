@@ -92,7 +92,6 @@ RUN ln -s /root/.composer/vendor/bin/phpcs /usr/bin/phpcs \
     && ln -s /root/.composer/vendor/bin/phpcpd /usr/bin/phpcpd
 # install phpcs
 RUN cd ~ \
-    && phpcs --version \
     && cd ~/.composer/vendor/squizlabs/php_codesniffer/src/Standards/ \
     && git clone https://github.com/wataridori/framgia-php-codesniffer.git Framgia
 
