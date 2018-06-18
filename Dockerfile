@@ -79,7 +79,7 @@ RUN apt-get install -y ruby ruby-dev \
 # PHPMetrics, PHPDepend, PHPMessDetector, PHPCopyPasteDetector
 RUN curl -s http://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer \
-    && composer global require 'squizlabs/php_codesniffer=3.1.1' \
+    && composer global require 'squizlabs/php_codesniffer=2.0.0' \
         'phpmetrics/phpmetrics' \
         'pdepend/pdepend' \
         'phpmd/phpmd' \
