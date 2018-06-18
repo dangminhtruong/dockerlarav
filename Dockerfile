@@ -84,7 +84,7 @@ RUN curl -s http://getcomposer.org/installer | php \
         'pdepend/pdepend' \
         'phpmd/phpmd' \
         'sebastian/phpcpd'
-# Create symlink
+# Create symlinks
 RUN ln -s /root/.composer/vendor/bin/phpcs /usr/bin/phpcs \
     && ln -s /root/.composer/vendor/bin/pdepend /usr/bin/pdepend \
     && ln -s /root/.composer/vendor/bin/phpmetrics /usr/bin/phpmetrics \
